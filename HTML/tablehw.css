@@ -1,0 +1,17 @@
+table,th,td{
+    border-style:dotted;
+    border: 2px solid black;
+    text-align: center;
+
+}
+th{
+    background-color: green;
+    color: white;
+}
+.colour th{
+    background-color: brown;
+    color:white;
+}
+table{
+    width: 100%;
+}

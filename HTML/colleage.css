@@ -1,0 +1,40 @@
+.div1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: brown;
+    display: inline-block;
+    font-size: 30px;
+    color:white;
+    font-family:sans-serif;   
+}
+li{
+    background-color: black;
+    color: white;
+    display:inline-block;
+    font-size: larger;
+    font-size: 20px;
+}
+.change{
+    display: inline-block;
+    margin: 15px;
+
+}
+.change1{
+
+    float: right;
+    height: auto;
+    vertical-align: middle;
+}
+#line{
+    display: none;
+}
+.vel:hover #line{
+    display: block;
+}
+h1,h2{
+    background-color: brown;
+    font-size: 16px;
+    color: white;
+    margin: 60px;
+}

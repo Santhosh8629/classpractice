@@ -1,0 +1,40 @@
+/* table.tr,td{
+    border-style:groove;
+    border-color:rgb(0, 6, 128);
+    border-width: 5px;
+}
+th{
+    border-width: 8px;
+    border-style:groove;
+    border-color: chartreuse;
+} */
+table{
+    background-color: darkorange;
+    border-style: groove;
+    width:100%;
+    text-align: center;
+}
+th{
+    font-style: italic;
+    font-size: 25px;
+    border-style: groove;
+    color: blue;
+}
+td{
+    font-size: 18px;
+    font-style: italic;
+    border-style: groove;
+    color:black;
+}
+.line{
+    background-color:  aqua;
+}
+/* .line1{
+    color: brown;
+} */
+.colour{
+    background-color: brown;
+}
+.colour1{
+    background-color: cornflowerblue;
+}

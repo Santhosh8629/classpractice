@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+li{
+   display:inline-block;
+  margin: 10px;;
+   width: 10%;
+}
+div{
+    background-color:darkblue;
+    height: 20px;
+}
+.change{
+    background-color: white;
+    width: 70%;
+   
+}
+.name{
+    margin: 10px;
+    color: black;
+}
+.name1{
+    color: white;
+}
+.img1{
+    float: right;
+    /* justify-content: flex-end; */
+    width: 30%;
+}
+.a{
+    width: 100%;
+}
+
