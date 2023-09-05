@@ -1,0 +1,54 @@
+div{
+    height: 100px;
+    width: 100px;
+}
+.inner{
+    display: none;
+}
+.first{
+    height: 400px;
+    width: 400px;
+    background-color: chartreuse;
+    position: static;
+}
+.second{
+    height:200px;
+    width: 300px;
+    background-color: chocolate;
+    position: relative;
+    top: 10px;
+}
+.third{
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    position: absolute;
+    bottom: 10px;
+    left: 1000px;
+}
+.fourth{
+    height: 100px;
+    width: 100px;
+    background-color: darkmagenta;
+    position: sticky;
+    bottom: 10px;
+    right: 1000px;
+}
+.five{
+    height: 100px;
+    width: 100px;
+    background-color:yellow;
+    position: fixed;
+    right: 500px;
+    top: 10px;
+}
+.first:hover .inner{
+    height: 100px;
+    width: 100px;
+    background-color: royalblue;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    display: block;
+
+}

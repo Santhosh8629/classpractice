@@ -13,8 +13,10 @@ h1{
     margin: auto;
 }
 li{
+    color: white;
   display: inline-block;
   margin: 10px;
+  border-radius: 5px;
 }
 .abc{
     display: flex;
@@ -25,7 +27,7 @@ li{
    
 }
 .line2{
-    
+    border-radius: 30px;
     justify-content: left;
     border: 2px solid black;
     margin: 10px;
@@ -45,4 +47,21 @@ img{
     margin-left: 10%;
     margin-top: 100px;
 }
+p{
+    float: right;
+}
+.Search{
+    font-size: larger;
+    font-style: normal;
+    border: 2px solid black;
+    float: left;
+    margin: 30px;
+}
+button{
+    border: none;
+}
+button:hover{
+    border: 2px solid black;
+    background-color: blue;
 
+}
