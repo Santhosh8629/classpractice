@@ -74,3 +74,11 @@ h3{
     float: left;
     padding-top: 30px;
 }
+@media screen and (max-width: 1000px){
+    body{
+        background-color: brown;
+    }
+    img{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

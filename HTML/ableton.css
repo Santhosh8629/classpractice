@@ -1,0 +1,42 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.list1{
+    width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.list2{
+    width: 30%;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+.list2 li{
+    margin-left: 20px;
+}
+.list3{
+    width: 20%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+img{
+    padding-left: 70px;
+}
+.para{
+    color: #000000;
+    padding-left: 300px;
+    padding-left: 300px;
+}
+p{
+    font-size: 20px;
+}
+.tripleimg{
+    background-color: #fbffa7;
+}
+.video{
+     padding-left: 300px;
+}
