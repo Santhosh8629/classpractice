@@ -50,8 +50,7 @@ img{
         background-color: blue;
     }
     .img{
-       grid-template-columns: repeat(3,1fr);
-       
+       grid-template-columns: repeat(3,1fr);  
     }
     .content{
        grid-template-columns: auto auto;
@@ -60,9 +59,7 @@ img{
     .line-1{
         display: grid;
         grid-column:span 2 ;
-    }
-    
-    
+    }  
 }
 @media screen and (max-width:700px) {
     body{
@@ -71,16 +68,14 @@ img{
     .img {
       grid-template-columns: auto auto;
 
-    }
-   
+    } 
     .content{
         grid-template-columns: auto;
        color: black;
     }
     .line-1{
         display: grid;
-        grid-column:span 1 ;
-       
+        grid-column:span 1 ;      
     }   
 }
 @media screen and (max-width:500px) {
