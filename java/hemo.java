@@ -4,7 +4,6 @@ public class hemo{
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter a gender");
         char gender=scan.next().charAt(0);
-        
         if(gender=='C'||gender=='c'){
         System.out.println(" a child");
         int month;
@@ -16,11 +15,7 @@ public class hemo{
         System.out.println("Enter a hemo");
         float hemo;
         hemo=scan.nextFloat();
-      
-            
             if(month<=1){
-                
-            
                 if(hemo>=1010&&hemo<20&&age<=1){
                     System.out.println("hemo level normal");
                 }
