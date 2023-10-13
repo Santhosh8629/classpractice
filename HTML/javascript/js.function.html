@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(s,k){
+            document.write(s+k);
+        }
+        sum(10,10);
+        document.write("<br>")
+        //anonymous function
+        let start = function(num){
+            document.write(num)
+        } 
+        start(25);
+        document.write("<br>")
+        //arrow function
+        let arrow = (add)=>document.write(add+ "santhosh");
+        arrow("add");
+        document.write("<br>");
+        //imediate invoked function
+        (function(num){
+            document.write("i am imediate invoked function"+num);
+        })(10);
+        document.write("<br>");
+        //reharsive function
+        let num=5;
+        function loop(){
+            if(num<20){
+                num++;
+                document.write(num);
+                loop();
+            }
+        }
+        loop();
+        document.write("<br>");
+        //call back function
+        let nu=5;
+        function callback(mycallback){
+            document.write("callback start"+"<br>")
+            mycallback('arrow funciton in callback'+"<br>");
+            document.write("callback end"+"<br>");
+        }
+        callback(arrow);
+    </script>
+    
+</body>
+</html>

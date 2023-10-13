@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="move" onclick="rand(0)"><p></p></button>
+    <button class="move" onclick="rand(1)"><p></p></button>
+    <button class="move" onclick="rand(2)"><p></p></button>
+    <button class="move" onclick="rand(3)"><p></p></button>
+    <button class="move" onclick="rand(4)"><p></p></button>
+    <button class="move" onclick="rand(5)"><p></p></button>
+    <button class="move" onclick="rand(6)"><p></p></button>
+    <button class="move" onclick="rand(7)"><p></p></button>
+    <button class="move" onclick="rand(8)"><p></p></button>
+    <button class="move" onclick="rand(9)"><p></p></button>
+</body>
+<script>
+    function rand(i){
+     document.getElementsByClassName('move')[i].innerHTML=Math.floor(Math.random()*10)+1;
+    }
+</script>
+</html>

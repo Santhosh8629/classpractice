@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //String Length
+        let text="aguhhiojojp";
+        let length=text.length;
+        document.write(length);
+
+        document.write("<br>");
+        //String slice()
+        let text1 = "Apple, Banana, Kiwi";
+        let part = text1.slice(13,1);
+        document.write(part);
+
+        document.write("<br>");
+        //substring()
+        let text2 = "Apple,,Banana, Kiwi";
+        let part1 = text2.substring(7,1);
+        document.write(part1);
+
+        document.write("<br>");
+        //String ReplaceAll()
+        let text3 = "I love Cats. Cats are very easy to love. cats are very popular.";
+        let part2 = text3.replaceAll("Cats","Santhosh");
+        document.write(part2);
+
+        document.write("<br>");
+        //touppercase
+        let text4 = "hello world";
+        let part3 = text4.toLocaleUpperCase();
+        document.write(part3);
+
+        document.write("<br>");
+        //tolowercase
+        let text5 = "HELLO WORLD";
+        let part4 = text5.toLowerCase();
+        document.write(part4);
+
+        document.write("<br>");
+        //concat()
+        let text6 = "HELLO";
+        let text7 = "WORLD";
+        let part5 =text6.concat("",text7);
+        document.write(part5);
+
+        document.write("<br>");
+        //trim()
+        let text9 ="     hello  world ";
+        let part6 = text9.trim();
+        document.write(part6);
+    </script>
+    
+</body>
+</html>

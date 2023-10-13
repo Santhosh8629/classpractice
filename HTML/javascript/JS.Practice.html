@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <div class="div">
+        <div></div>
+        <div></div>
+    </div>
+    <script>
+        let s=0;
+        let m=0;
+    function clock(){
+        document.getElementsByClassName('div')[0].innerHTML="TIME -"+m+" : "+s;
+        if(s==59){
+            s=0;
+            m++;
+        } 
+        if(m==5){
+            clearInterval(sec);
+        }
+        s++;
+    }
+    const sec=setInterval(clock,100);
+    </script>
+</body>
+</html>

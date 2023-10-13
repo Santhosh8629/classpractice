@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th> 
+        </tr>
+    <script>
+        let object={
+            id1:{
+            name:"santhosh",
+            age:54,
+            email:"santhosh@"
+        },
+
+            id2:{
+            name:"saravana",
+            age:78,
+            email:"saravana@"
+        },
+            id3:{
+            name:"ashif",
+            age:34,
+            email:"ashif@"
+            }  
+        }
+        let table=document.getElementById('table');
+            for(let x in object){
+                let row=document.createElement('tr');
+                for(let y in object[x]){
+                    let column=document.createElement('td');
+                   column.textContent=object[x][y];
+                   row.append(column);
+                }
+                table.append(row);
+        }  
+    </script>
+</body>
+</html>

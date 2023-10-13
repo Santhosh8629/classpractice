@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td,th{
+        padding-left: 100px;
+        color: blue;
+        background-color: chocolate;
+    }
+</style>
+<body>
+    <form action="" method="post" id="form">
+    <label for="">ProductName</label>
+    <input type="text" name="name" id="name">
+    <label for="">Price</label>
+    <input type="number" name="price" id="price">
+    <label for="">Quantity</label>
+    <input type="number" name="qty" id="qty">
+    <input type="submit">
+    </form>
+    <table id="table">
+        <tr>
+            <th>ProductName</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Tax</th>
+            <th>Total</th>
+        </tr>
+    </table>
+    <script>
+        document.getElementById('form').addEventListener('submit',function(event){
+            event.preventDefault();
+            let product=document.getElementById('name').value;
+            let pricess=document.getElementById('price').value;
+            let quantityss=document.getElementById('qty').value;
+            let tax = (0.18 * pricess)*quantityss;
+            let total = tax+(pricess*quantityss);
+            let table=document.getElementById('table');
+
+            let row=document.createElement('tr');
+
+            let col=document.createElement('td');
+            col.textContent=product;
+
+            let col1=document.createElement('td');
+            col1.textContent=pricess;
+
+            let col2=document.createElement('td');
+            col2.textContent=quantityss;
+
+            let col3=document.createElement('td');
+            col3.textContent=tax;
+
+            let col4=document.createElement('td');
+            col4.textContent=total;
+
+            row.append(col,col1,col2,col3,col4);
+            table.append(row);
+
+            document.getElementById('form').reset();
+    
+        });
+    </script>
+    
+</body>
+</html>

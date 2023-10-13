@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">Click</button>
+    <input type="number" id="num1">
+    <img id="img" src="https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_640.jpg">
+
+    <p id="para"></p>
+    <script>
+        function fun(){
+            let a=document.getElementById("num1").value;
+            window.alert(a);
+            document.getElementById("num1").style.backgroundColor="red";
+            document.getElementById("img").setAttribute("src","https://img.freepik.com/free-photo/bird-with-yellow-head-blue-eyes-sits-branch-purple-flowers_1340-38641.jpg");
+        }
+        // let num=[
+        //     {name:"Santhosh",
+        //      age :23,
+        //      phone:56757657},
+        //     {name:"Ashif",
+        //      age :20,
+        //      phone:777908098},
+        //     {name:"Saravana",
+        //     age:100,
+        //     phone:97899899},
+        //     {name:"Sathish",
+        //     age:10,
+        //     phone:97899899}
+        // ]
+        // for(let i=0;i<=num.length;i++){
+        //      document.write("NAME  : "+num[i].name+"<br>");
+        //      document.write("AGE   : "+num[i].age+"<br>");   
+        //      document.write("PHONE : "+num[i].phone+"<br>");   
+        //     }
+        
+        let a=null;
+        // let b=Number(a);
+        console.log(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //anonyms function
+        let go = function(num){
+            document.write(num)
+        } 
+        go(100);
+        document.write("<br>")
+        //basic function
+        function add(s,k){
+            document.write(s+k);
+        }
+        add(100,100);
+        document.write("<br>")
+        //arrow function
+        let arrow = (sum)=>document.write("hello world");
+        arrow(10);
+        document.write("<br>")
+        //call back function
+        let num=10;
+        function callback(call){
+            document.write("start");
+            call("hii");
+            document.write("end");
+        }
+        callback(go);
+        document.write("<br>")  
+        //imediate invoked function
+        (function(num){
+            document.write(num);
+        })(10000);
+    </script>
+</body>
+</html>

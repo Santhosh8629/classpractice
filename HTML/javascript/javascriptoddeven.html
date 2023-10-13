@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=(Number)(prompt("Enter a number"));
+        if(num%2==0){
+        document.write("this is even number");
+        }
+        else{
+            document.write("this is odd numbe");
+        }
+        document.write("<pre>");
+        let num1=(Number)(prompt("enter a major minor age"));
+        if(num1>=18 && num1<65){
+            document.write("major");
+        }
+        else if(num1>0 && num1<18){
+            document.write("Minor");
+        }
+        else if(num1>65 && num1<100){
+            document.write("senior citizen");
+        }
+        else{
+            document.write("enter a crt age");
+        }
+        document.write("<pre>");
+        let num2=(Number)(prompt("ENTER A NUMBERn 1"));
+        let num3=(Number)(prompt("ENTER A NUMBERn 2"))
+        document.write("TOTAL "+(num2+num3));
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            border: solid red;
+            font-style: italic;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <div>NAME</div>
+        <div>Email</div>
+        <div>Phone NO</div>
+    </div>
+    <script>
+        let div=document.getElementById('div');
+        const object=[{
+        name:"santhosh",
+        email:"santhosh@gmail.com",
+        phone:8667665929
+        },
+        {
+        name:"saravana",
+        email:"saravana@gmail.com",
+        phone:8667665929
+        },
+        {
+        name:"ashif",
+        email:"ashif@gmail.com",
+        phone:8667665929
+        }
+    ];
+for(let i=0;i<object.length;i++){
+    for(let x in object[i]){
+        let newdiv=document.createElement('h2');
+        newdiv.textContent=object[i][x];
+        div.appendChild(newdiv);
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO</title>
+    <style>
+        .grid{
+            width: 50%;
+            margin-left: 25%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: 200px;
+            grid-gap: 10px;
+        }
+        .grid div{
+            background-color: green;
+        }
+        .move{
+            background-size: cover;
+            background-image: url("");
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="move" onclick="main(0)"></div>
+        <div class="move" onclick="main(1)"></div>
+        <div class="move" onclick="main(2)"></div>
+        <div class="move" onclick="main(3)"></div>
+        <div class="move" onclick="main(4)"></div>
+        <div class="move" onclick="main(5)"></div>
+        <div class="move" onclick="main(6)"></div>
+        <div class="move" onclick="main(7)"></div>
+        <div class="move" onclick="main(8)"></div>
+    </div>
+    <script>
+       const check=['0','0','0','0','0','0','0','0','0'];
+        let player='X';
+        function main(p){
+            if(player==='X' && check[p]==='0'){
+                document.getElementsByClassName('move')[p].style.backgroundImage=`url("https://www.freepnglogos.com/uploads/x-png/x-png-x-drawing-transparent-background-32.png")`;
+                check[p]=player;
+            }else if(player==='O'&& check[p]==='0'){
+                document.getElementsByClassName('move')[p].style.backgroundImage=`url("https://www.pngarts.com/files/2/Letter-O-PNG-High-Quality-Image.png")`;
+                check[p]=player;
+            }
+            else{
+                alert("invalid move");
+                return 0;
+            }
+            if(winner(player)){
+                document.write("the winner is "+player);
+            }
+           player=(player==="X")?"O":"X";
+        }
+        function winner(){
+            if(check[0]==player && check[1]===player&& check[2]===player){
+                return true;
+            }
+            else if(check[3]==player && check[4]===player&& check[5]===player){
+                return true;
+            }
+            else if(check[6]==player && check[7]===player&& check[8]===player){
+                return true;
+            }
+            else if(check[0]==player && check[3]===player&& check[6]===player){
+                return true;
+            }
+            else if(check[1]==player && check[4]===player&& check[7]===player){
+                return true;
+            }
+            else if(check[2]==player && check[5]===player&& check[8]===player){
+                return true;
+            }
+            else if(check[0]==player && check[4]===player&& check[8]===player){
+                return true;
+            }
+            else if(check[2]==player && check[4]===player&& check[6]===player){
+                return true;
+            }
+            else{
+                return false;
+            }
+        } 
+    </script>
+</body>
+</html>
